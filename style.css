@@ -21,12 +21,11 @@ body {
 }
 .nav,
 .nav .nav-links {
-  position: absolute;
-  text-align: center;
   display: flex;
   align-items: center;
 }
 .nav {
+  position: absolute;
   justify-content: space-between;
 }
 a {
@@ -64,11 +63,11 @@ a {
   transition: all 0.2s linear;
 }
 .nav.openSearch .search-box {
+  position:absolute;
   opacity: 1;
   pointer-events: auto;
 }
 .search-box .search-icon {
-  position: absolute;
   left: 15px;
   top: 50%;
   left: 15px;
@@ -211,4 +210,19 @@ a {
   margin:0;
   color: black;
   
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown button {
+    position: absolute;
+    bottom:85%; 
+    text-align: center;
+    color:white;
+    border:none;
+  }
+  .dropdown .selection {
+    text-align: center;
+    position: absolute;
+    bottom:79%;
+  }
 }
